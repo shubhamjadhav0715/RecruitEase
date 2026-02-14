@@ -77,4 +77,3 @@ The system bridges the gap between students and HR departments by allowing job p
 - 📄 Resume download for HR  
 - 💬 Real-time chat between HR and students  
 
-
