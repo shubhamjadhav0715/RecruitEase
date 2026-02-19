@@ -1,57 +1,48 @@
 # RecruitEase - System Diagrams
 
-This document contains all the use case diagrams and flow diagrams for the RecruitEase Campus Recruitment Portal.
+This document contains the use case diagram and flow diagrams for the RecruitEase Campus Recruitment Portal.
 
 ---
 
-## Use Case Diagrams
+## Use Case Diagram
 
-### 1. Admin Module Use Case Diagram
+### RecruitEase System - Complete Use Case Diagram
 
-![Admin Module Use Case Diagram](https://nyc3.digitaloceanspaces.com/bhindi-drive/files/66819f6e-f43d-49d0-a4f6-dbd57a6d58ed/2026-02-19T18-10-51-011Z-2c3ee313-nano-banana-pro_1771524650854.jpg)
+![RecruitEase Complete Use Case Diagram](https://nyc3.digitaloceanspaces.com/bhindi-drive/files/66819f6e-f43d-49d0-a4f6-dbd57a6d58ed/2026-02-19T18-04-17-192Z-6b1b337a-nano-banana-pro_1771524257014.jpg)
 
-**Admin Capabilities:**
-- Secure Login & Profile Management
-- Manage HR Users (Add, Edit, Delete, View)
-- Manage Job Postings (View All, Approve, Delete)
-- Manage Company/Client Details (Add, Edit, Delete, View)
-- View Reports (Daily Job Postings, HR Activity, Application Statistics)
+**System Actors:**
+- **Admin**: System administrator with full control
+- **HR**: Human resources personnel managing recruitment
+- **Student**: Job seekers applying for positions
+
+**Admin Use Cases:**
+- Login & Authentication
+- Manage HR Users
+- Manage Job Postings
+- Manage Company/Client Details
+- View Reports
 - View Student Feedback
-- Authentication Validation & Email Notifications
 
----
-
-### 2. HR Module Use Case Diagram
-
-![HR Module Use Case Diagram](https://nyc3.digitaloceanspaces.com/bhindi-drive/files/66819f6e-f43d-49d0-a4f6-dbd57a6d58ed/2026-02-19T18-11-14-419Z-52bff802-nano-banana-pro_1771524674283.jpg)
-
-**HR Capabilities:**
-- Secure Login & Profile Management
-- Add Company/Client Details (Name, Email, Address, Contact, Logo)
+**HR Use Cases:**
+- Login & Authentication
+- Add/Manage Company Details
 - Create/Edit/Delete Job Postings
-- View Job Applicants
-- Update Application Status (Applied, Shortlisted, Rejected)
-- View Dashboard (Total Jobs, Applicants, Hiring Statistics)
-- Download Applicant Resumes
-- Real-time Chat with Students
-- Security Features (Disable Copy-Paste & Screenshot for sensitive data)
+- View Applicants
+- Update Application Status
+- View Dashboard (jobs, applicants, statistics)
+- Download Resumes
 
----
-
-### 3. Student Module Use Case Diagram
-
-![Student Module Use Case Diagram](https://nyc3.digitaloceanspaces.com/bhindi-drive/files/66819f6e-f43d-49d0-a4f6-dbd57a6d58ed/2026-02-19T18-11-36-142Z-fe3d9239-nano-banana-pro_1771524695056.jpg)
-
-**Student Capabilities:**
-- Secure Login & Profile Management
-- View Job Openings (based on registered domain)
-- Filter Jobs (by Location, Department, Company)
+**Student Use Cases:**
+- Login & Authentication
+- View Job Openings
+- Filter Jobs (Location, Department, Company)
 - Apply for Jobs
-- Upload/Update Resume (with validation)
+- Upload/Update Resume
 - View Application History & Status
-- Real-time Chat with HR
-- Email Notifications for applications and status updates
-- Optional: Advanced Search & Save Jobs for Later
+
+**Shared Features:**
+- Email Notifications (all actors)
+- Real-time Chat (HR ↔ Student)
 
 ---
 
@@ -115,7 +106,7 @@ Login → Dashboard → Browse/Apply/Resume/Status/Chat → Update Database → 
 
 This document provides a comprehensive visual overview of the RecruitEase system architecture:
 
-- **Use Case Diagrams**: Show the interactions between actors (Admin, HR, Student) and the system functionalities
+- **Use Case Diagram**: Shows the interactions between all actors (Admin, HR, Student) and the system functionalities in one unified view
 - **Flow Diagrams**: Illustrate the high-level workflow for each user role from login to logout
 
 These diagrams help understand the system requirements, user interactions, and overall application flow.
